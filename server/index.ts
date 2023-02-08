@@ -4,14 +4,14 @@ import * as dotenv from 'dotenv';
 import cors from 'cors';
 
 // immport de la connexion de mongoDB
-import connectDB from './mongodb/connect';
+import connectDB from './src/mongodb/connect';
 
 // Pour le typage 
 import { Request, Response } from "express";
 
 // Import des routes
-import postRoutes from './routes/postRoutes';
-import dalleRoutes from './routes/dalleRoutes';
+import postRoutes from './src/routes/postRoutes';
+import dalleRoutes from './src/routes/dalleRoutes';
 
 dotenv.config();
 
